@@ -10,8 +10,10 @@ class Transactions extends Model
     use HasFactory;
 
     public $timestamps = false;
-    protected $casts = [
-        'products' => 'array'
-    ];
+    
     protected $table = 'transactions';
+
+    public function getProductsAttribute($value){
+        return json_decode($value);
+    }
 }
