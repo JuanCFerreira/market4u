@@ -6,14 +6,14 @@ O desafio consiste na criação de uma aplicação API com a linguagem PHP, util
 O objetivo da aplicação é simular a escrita e leitura de uma transação com produtos realizada no sistema.
 
 A API deve possibilitar a leitura e escrita de pelo menos os seguintes atributos;
-• Id de identificação da transação;
-• Cliente que efetuou a transação;
-• Data da transação;
-• Valor a ser pago da transação;
-• Local que a transação ocorreu;
-• Produtos da transação;
-• Quantidade de produtos vendida;
-• Valor de venda unitário de cada produto;
+* Id de identificação da transação;
+* Cliente que efetuou a transação;
+* Data da transação;
+* Valor a ser pago da transação;
+* Local que a transação ocorreu;
+* Produtos da transação;
+* Quantidade de produtos vendida;
+* Valor de venda unitário de cada produto;
 
 ## Requesitos para rodar
 * Configurar conexão ao banco pelo arquivo env
@@ -31,7 +31,10 @@ A API deve possibilitar a leitura e escrita de pelo menos os seguintes atributos
 
 
 ### Gravação:
-``` POST /api/transaction ```
+``` 
+POST /api/transaction 
+```
+
 **Data:**
 * client (numero)
 * date
