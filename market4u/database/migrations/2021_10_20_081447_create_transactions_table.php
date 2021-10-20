@@ -15,14 +15,11 @@ class CreateTransactionsTable extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
-            $table->string('client');
+            $table->integer('client');
             $table->date('date');
             $table->double('value', 8, 2);
             $table->string('location');
             $table->json('products');
-            $table->integer('quantity');
-            $table->double('unitary_value', 8, 2);
-
         });
     }
 
